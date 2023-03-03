@@ -1,0 +1,265 @@
+body {
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button {
+  background: #333;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.home-container {
+  display: grid;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "hero hero skate-1"
+    "hero hero skate-2";
+}
+
+.hero--header {
+  grid-area: hero;
+
+  background: white url("./images/hero-skateboard.jpeg");
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero--header > * {
+  background-color: white;
+  padding: 5px;
+}
+
+.cta {
+  background-color: #333;
+  color: white;
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cta p {
+  margin: 3px 0;
+}
+
+.cta p:first-child {
+  font-size: 17px;
+}
+
+.price {
+  font-size: 35px;
+}
+
+.skate-1 {
+  grid-area: skate-1;
+}
+.skate-2 {
+  grid-area: skate-2;
+}
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+.menu ul {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+
+  padding: 10px 0;
+}
+
+.menu a {
+  display: block;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.feature {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  box-shadow: 0px 5px 6px rgba(51, 51, 51, 0.261);
+  border: 1px solid rgba(51, 51, 51, 0.261);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.feature .icon {
+  width: 100px;
+}
+
+.feature p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.learn-more,
+.learn-more-alt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.learn-more-alt img {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.learn-more h2,
+.learn-more-alt h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.learn-more-alt .about__details {
+  text-align: right;
+}
+
+.skate-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+
+.skate-gallery h2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+
+  font-size: 30px;
+
+  grid-column: 1 / -1;
+}
+
+.skate-gallery h2::before,
+.skate-gallery h2::after {
+  display: block;
+  content: "";
+  height: 10px;
+  background: linear-gradient(to left, #333, transparent);
+}
+
+.skate-gallery h2::after {
+  background: linear-gradient(to right, #333, transparent);
+}
+
+@media screen and (max-width: 625px) {
+  .hero {
+    grid-template-areas:
+      "hero hero"
+      "skate-1 skate-2";
+  }
+
+  .hero--header {
+    min-height: 300px;
+  }
+
+  .cta {
+    text-align: center;
+  }
+
+  .learn-more,
+  .learn-more-alt {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .learn-more-alt img {
+    grid-column: auto;
+  }
+
+  .learn-more-alt .about__details {
+    text-align: center;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .menu {
+    order: -1;
+    perspective: 800px;
+  }
+
+  .menu ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.4s;
+    grid-gap: 10px;
+  }
+
+  [aria-controls="menu-list"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 600px;
+    transform: rotateX(0);
+  }
+
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+
+  [aria-expanded="false"] .open {
+    display: inline-block;
+  }
+}
