@@ -5,9 +5,21 @@ This repo is to showcase my deployed projects with their preview links below:
 
 ## 🔗 Links
 
+[![Phone_Pros](https://img.shields.io/badge/Phone_Pros-cd1417?style=for-the-badge)](https://phone-pros.com)
+
+![App Screenshot](https://i.ibb.co/9nD1Mz4/phone.png)
+
+##
+
 [![Front_SaaS](https://img.shields.io/badge/Front_SaaS-3f92e5?style=for-the-badge)](https://front-saas-1.web.app)
 
 ![App Screenshot](https://i.ibb.co/LvqyRQ8/front.png)
+
+##
+
+[![Vini_Furniture](https://img.shields.io/badge/Vini_Furniture-a38342?style=for-the-badge)](https://vini-furniture.com)
+
+![App Screenshot](https://i.ibb.co/w0wXrkz/vini.png)
 
 ##
 
