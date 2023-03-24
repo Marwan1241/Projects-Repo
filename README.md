@@ -13,13 +13,13 @@ This repo is to showcase my deployed projects with their preview links below:
 
 [![Front_SaaS](https://img.shields.io/badge/Front_SaaS-3f92e5?style=for-the-badge)](https://front-saas-1.web.app)
 
-![App Screenshot](https://i.ibb.co/LvqyRQ8/front.png)
+![App Screenshot](https://i.ibb.co/4Zxz7K3/front-saas.png)
 
 ##
 
 [![Vini_Furniture](https://img.shields.io/badge/Vini_Furniture-a38342?style=for-the-badge)](https://vini-furniture.com)
 
-![App Screenshot](https://i.ibb.co/w0wXrkz/vini.png)
+![App Screenshot](https://i.ibb.co/kcSWzPK/vini.png)
 
 ##
 
@@ -31,7 +31,7 @@ This repo is to showcase my deployed projects with their preview links below:
 
 [![CodeRad](https://img.shields.io/badge/CodeRad-262538?style=for-the-badge)](https://coderad-1.web.app)
 
-![App Screenshot](https://i.ibb.co/XWM6k7r/coderad.png)
+![App Screenshot](https://i.ibb.co/JF9xKkN/code-rad.png)
 
 ##
 
