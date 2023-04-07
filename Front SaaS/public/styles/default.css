@@ -127,6 +127,10 @@ i {
   margin-right: auto;
 }
 
+.active {
+  color: var(--font-links);
+}
+
 @media (max-width: 800px) {
   header::after {
     display: none;

@@ -569,7 +569,7 @@ section.benefits {
 }
 
 footer {
-  padding: var(--size-100) var(--size-20);
+  padding: var(--size-50) var(--size-20);
 }
 
 footer .footer-top {
@@ -577,6 +577,11 @@ footer .footer-top {
   width: 100%;
   flex-wrap: wrap;
   gap: var(--size-50);
+  padding-bottom: var(--size-50);
+}
+
+footer .footer-top .footer-info {
+  line-height: var(--size-40);
 }
 
 footer .footer-top .footer-info .footer-logo {
@@ -599,4 +604,80 @@ footer .footer-top .footer-list li {
   color: var(--font-color-p);
   font-size: var(--size-16);
   font-weight: 600;
+}
+
+footer .footer-top .footer-list .footer-list-item {
+  line-height: var(--size-30);
+}
+
+footer .footer-top .footer-list .footer-list-item.active {
+  color: var(--font-links);
+}
+
+footer .footer-top .footer-list .footer-list-item .btn-hiring {
+  font-size: var(--size-10);
+  color: var(--white);
+  background: var(--font-links);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer .footer-bottom {
+  padding: var(--size-30) 0;
+}
+
+footer .footer-bottom .footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--size-50);
+}
+
+footer .footer-bottom .footer-links .sitemap-link {
+  color: var(--font-color-p);
+}
+
+footer .footer-bottom .footer-links .sitemap-link.active {
+  color: var(--font-links);
+}
+
+footer .footer-bottom .footer-links .social-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-20);
+}
+
+footer .footer-bottom .footer-links :is(.social-link, .country-select) {
+  font-size: var(--size-20);
+  color: #5f6368;
+  background-color: #ecf2fe;
+  padding: var(--size-10);
+  border-radius: 5px;
+}
+
+footer .footer-bottom .footer-links .social-link {
+  width: 60px;
+  text-align: center;
+}
+
+footer .footer-bottom .footer-links .country-select {
+  width: 220px;
+}
+
+footer .copyrights {
+  padding-top: var(--size-50);
+}
+
+footer .copyrights p:nth-child(1) {
+  margin: var(--size-30) auto;
+}
+
+footer .copyrights p {
+  font-size: var(--size-16);
+  color: var(--font-color-p);
+  text-align: center;
+
+  width: 60%;
+  margin: 0 auto;
 }
