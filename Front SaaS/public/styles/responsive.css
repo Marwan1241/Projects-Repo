@@ -1,5 +1,5 @@
 /* Responsive Nav */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 770px) {
   [aria-controls="navigation-menu"] {
     display: block;
   }
