@@ -79,7 +79,8 @@ header:after {
 header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: var(--size-100);
   padding: var(--size-30);
 }
 header .header-info h1 {
@@ -106,7 +107,6 @@ header .info-btns {
     ". b6 . . b7";
   gap: 60px 20px;
   width: 50%;
-  margin: 0 auto;
   margin-bottom: -10rem;
   z-index: 5;
 }
@@ -334,14 +334,15 @@ section.benefits {
 
 .hubspot {
   background-image: url(../asstets/abstract/dots.svg);
-  background-size: 18%;
+  background-size: 17%;
   background-repeat: no-repeat;
   background-position: bottom left;
+  background-position-x: 10%;
 }
 
 .hubspot .hubspot-image {
-  width: 70%;
-  justify-self: left;
+  width: 60%;
+  justify-self: center;
 }
 
 .hubspot .container {
@@ -405,6 +406,7 @@ section.benefits {
   gap: var(--size-40);
   padding: var(--size-50) 0;
   align-content: center;
+  justify-items: center;
 }
 
 .pricing-cards .price-card-primary {
@@ -592,7 +594,7 @@ footer .footer-top .footer-info .footer-logo {
 footer .footer-top .footer-list {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: var(--size-20);
 }
 

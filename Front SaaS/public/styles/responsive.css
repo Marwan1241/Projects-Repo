@@ -55,6 +55,11 @@
       "b4 . b5 ."
       ". b6 . b7";
     justify-items: center;
+    margin-bottom: initial;
+  }
+
+  section.benefits {
+    padding: var(--size-50) 0;
   }
 
   .banner .container {
@@ -67,20 +72,27 @@
   }
 
   .hubspot {
-    background-image: url(../asstets/abstract/dots.svg);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-size: 25%;
+    background-position: bottom left;
   }
 
   .hubspot .hubspot-image {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .hubspot .container {
     text-align: center;
     gap: var(--size-100);
+  }
+
+  .brands .brands-list {
+    gap: var(--size-20);
+    padding: var(--size-20);
+  }
+
+  .brands .brands-list .brand-icon {
+    max-width: 120px;
   }
 
   .pricing-cards .price-card-primary {
@@ -91,6 +103,15 @@
   .hire-us .container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .hire-text hr {
+    margin: 0 auto;
+  }
+
+  .hire-us .container .people-wrapper {
+    justify-content: center;
   }
 
   footer .footer-bottom .footer-links .social-media {
@@ -119,9 +140,33 @@
       "b6 b6 b7";
   }
 
+  .banner-2 {
+    height: 250px;
+  }
+
+  .hubspot {
+    background-size: 50%;
+    background-position: top left;
+    background-position-y: 20%;
+  }
+
+  .hubspot .container {
+    padding-top: var(--size-30);
+  }
+
+  .brands .brands-list {
+    gap: var(--size-50);
+    padding: var(--size-50);
+  }
+
+  .brands .brands-list .brand-icon {
+    max-width: 150px;
+  }
+
   .why-us .why-us-components {
     grid-template-columns: 1fr;
     gap: var(--size-14) 0;
+    margin: var(--size-30) auto;
   }
 
   .why-us-components .why-component {
@@ -153,6 +198,19 @@
 
   .hire-us form.hire-us-form .btn-wrapper .btn:nth-child(1) {
     display: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h2 {
+    font-size: var(--size-20);
+  }
+
+  footer .footer-top {
+    justify-content: center;
+    align-items: center;
   }
 }
 
